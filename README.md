@@ -21,5 +21,17 @@ This is a decoupled weather application built as part of a pre-screening assessm
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/nextjs-laravel-weather-app.git
+   git clone https://github.com/Carey99/nextjs-laravel-weather-app.git
    cd nextjs-laravel-weather-app/backend
+
+##
+- User types in input → SearchBar hits 
+ ```bash
+ GET /api/cities?q=...
+```
+- Suggestion shown → user selects one
+- User clicks Search → frontend sends
+```
+GET /api/weather?city=...
+```
+- Laravel fetches weather → responds → fronend shoes WeatherCard
